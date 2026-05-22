@@ -16,12 +16,9 @@ CREATE TABLE uber (
     commission_fee NUMERIC(10,2)
 );
 
-COPY uber(
-    earning_id, work_date, platform, city, shift, hours_worked, trips, km_driven,
-    gross_earning, tips, fuel_cost, parking_tolls, commission_fee
-)
-FROM 'D:\Study\SQL\Uber Project\uber_taxi_earnings.csv'
-CSV HEADER;
+-- Import data from CSV file
+-- In psql, run this command from the same folder as the CSV file:
+-- \copy uber FROM 'uber_taxi_earnings.csv' CSV HEADER;
 select * from uber;
 
 
