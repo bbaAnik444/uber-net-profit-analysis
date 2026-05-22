@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS uber_taxi_earnings;
+DROP TABLE IF EXISTS uber;
 
 CREATE TABLE uber (
     earning_id INT PRIMARY KEY,
